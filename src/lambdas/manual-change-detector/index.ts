@@ -10,13 +10,13 @@ import {
 declare const Buffer;
 
 export async function handler(event: AWSEvent): Promise<void> {
-    const iam: IAM = new IAM();
+    const iam = new IAM();
     const alias: string = (await iam.listAccountAliases().promise()).AccountAliases[0]; //this is only necessary if you have multiple AWS accounts
 
     const hookUrl: string = "your-slack-webhook-value";
     const slack: SlackWebhook = new SlackWebhook(hookUrl);
 
-    const payload: Buffer = new Buffer.from(event.awslogs.data, 'base64');
+    const payload = Buffer.from(event.awslogs.data, 'base64');
     zlib.gunzip(payload, function (e, result) { //get the CloudWatch payload in plaintext
         const eventData: AWSCloudwatchEvent = JSON.parse(result.toString('ascii'));
 

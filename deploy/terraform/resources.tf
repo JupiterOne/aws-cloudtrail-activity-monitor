@@ -91,12 +91,6 @@ resource "aws_lambda_function" "manual_change_detector_lambda" {
   timeout = 30
   runtime = "nodejs12.x"
 
-  environment {
-    variables = {
-      foo = "bar"
-    }
-  }
-
 }
 
 

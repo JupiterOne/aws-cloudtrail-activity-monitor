@@ -1,0 +1,11 @@
+{
+    "name": "aws-cloudtrail-activity-monitor",
+    "version": "1.0.0",
+    "description": "detect manual changes done via the aws console",
+    "main": "index.js",
+    "license": "UNLICENSED",
+    "scripts": {},
+    "dependencies": {
+        "slack-webhook": "^1.0.0"
+    }
+}
