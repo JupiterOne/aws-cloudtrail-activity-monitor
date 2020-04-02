@@ -1,5 +1,5 @@
 import SlackWebhook from 'slack-webhook'; //this is the only external dependency
-import IAM from 'aws-sdk/clients/iam';
+import IAM from 'aws-sdk/clients/iam'; // you'll need to add the aws-sdk package if running outside of lambda
 import zlib from 'zlib';
 import {
     AWSEvent,

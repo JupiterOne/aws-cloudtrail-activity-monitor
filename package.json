@@ -1,7 +1,7 @@
 {
     "name": "aws-cloudtrail-activity-monitor",
     "version": "1.0.0",
-    "description": "detect manual changes done via the aws console",
+    "description": "Detect and alert on certain CloudTrail activities such as manual changes done via the aws console.",
     "main": "index.js",
     "license": "UNLICENSED",
     "scripts": {},
