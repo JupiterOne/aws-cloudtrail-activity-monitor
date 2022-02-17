@@ -89,7 +89,7 @@ resource "aws_lambda_function" "manual_change_detector_lambda" {
 
   memory_size = 256
   timeout = 30
-  runtime = "nodejs12.x"
+  runtime = "nodejs14.x"
 
 }
 
