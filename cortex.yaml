@@ -1,0 +1,14 @@
+openapi: 3.0.1
+info:
+  title: aws-cloudtrail-activity-monitor
+  description: >-
+    Detect and alert on certain CloudTrail activities such as manual changes
+    done via the aws console.
+  x-cortex-git:
+    github:
+      repository: JupiterOne/aws-cloudtrail-activity-monitor
+  x-cortex-owners:
+    - type: group
+      name: JupiterOne/security
+  x-cortex-service-groups: tier-4
+  x-cortex-tag: aws-cloudtrail-activity-monitor

@@ -1,11 +1,15 @@
 {
-    "name": "aws-cloudtrail-activity-monitor",
-    "version": "1.0.0",
-    "description": "Detect and alert on certain CloudTrail activities such as manual changes done via the aws console.",
-    "main": "index.js",
-    "license": "UNLICENSED",
-    "scripts": {},
-    "dependencies": {
-        "slack-webhook": "^1.0.0"
-    }
+  "name": "aws-cloudtrail-activity-monitor",
+  "version": "1.0.0",
+  "description": "Detect and alert on certain CloudTrail activities such as manual changes done via the aws console.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JupiterOne/aws-cloudtrail-activity-monitor"
+  },
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "slack-webhook": "^1.0.0"
+  }
 }
